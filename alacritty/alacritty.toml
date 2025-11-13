@@ -1,76 +1,5 @@
-live_config_reload = true
-
 [colors]
 draw_bold_text_with_bright_colors = false
-
-[colors.bright]
-black = "#4d4d4d"
-blue = "#a277ff"
-cyan = "#61ffca"
-green = "#61ffca"
-magenta = "#a277ff"
-red = "#ff6767"
-white = "#edecee"
-yellow = "#ffca85"
-
-[colors.cursor]
-cursor = "#a277ff"
-
-[colors.normal]
-black = "#110f18"
-blue = "#a277ff"
-cyan = "#61ffca"
-green = "#61ffca"
-magenta = "#a277ff"
-red = "#ff6767"
-white = "#edecee"
-yellow = "#ffca85"
-
-[colors.primary]
-background = "#15141b"
-foreground = "#edecee"
-
-[colors.search.focused_match]
-background = "#9F7AF5"
-foreground = "#ffffff"
-
-[colors.search.matches]
-background = "#ffffff"
-foreground = "#000000"
-
-[colors.selection]
-background = "#29263c"
-text = "CellForeground"
-
-[cursor.style]
-shape = "Beam"
-
-[font]
-size = 17.0
-
-[font.bold]
-family = "JetBrains Mono"
-style = "Regular"
-
-[font.bold_italic]
-family = "JetBrains Mono"
-style = "Italic"
-
-[font.glyph_offset]
-x = 0
-y = 3
-
-[font.italic]
-family = "JetBrains Mono"
-style = "Italic"
-
-[font.normal]
-family = "JetBrains Mono"
-style = "Regular"
-
-[font.offset]
-x = 0
-y = 9
 
 [[keyboard.bindings]]
 chars = "\f"
@@ -134,13 +63,85 @@ chars = "\u001B\u007F"
 key = "Back"
 mods = "Alt"
 
+[general]
+live_config_reload = true
+
+[colors.bright]
+black = "#4d4d4d"
+blue = "#a277ff"
+cyan = "#61ffca"
+green = "#61ffca"
+magenta = "#a277ff"
+red = "#ff6767"
+white = "#edecee"
+yellow = "#ffca85"
+
+[colors.cursor]
+cursor = "#a277ff"
+
+[colors.normal]
+black = "#110f18"
+blue = "#a277ff"
+cyan = "#61ffca"
+green = "#61ffca"
+magenta = "#a277ff"
+red = "#ff6767"
+white = "#edecee"
+yellow = "#ffca85"
+
+[colors.primary]
+background = "#15141b"
+foreground = "#edecee"
+
+[colors.search.focused_match]
+background = "#9F7AF5"
+foreground = "#ffffff"
+
+[colors.search.matches]
+background = "#ffffff"
+foreground = "#000000"
+
+[colors.selection]
+background = "#29263c"
+text = "CellForeground"
+
+[cursor.style]
+shape = "Beam"
+
+[font]
+size = 17.0
+
+[font.bold]
+family = "Maple Mono NF CN"
+style = "Regular"
+
+[font.bold_italic]
+family = "Maple Mono NF CN"
+style = "Italic"
+
+[font.glyph_offset]
+x = 0
+y = 3
+
+[font.italic]
+family = "Maple Mono NF CN"
+style = "Italic"
+
+[font.normal]
+family = "Maple Mono NF CN"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 9
+
 [scrolling]
 history = 100000
 multiplier = 4
 
 [selection]
 save_to_clipboard = true
-semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+semantic_escape_chars = ''',│`|:"' ()[]{}<>'''
 
 [window]
 decorations = "transparent"
@@ -152,3 +153,5 @@ lines = 15
 [window.padding]
 x = 20
 y = 22
+
+[keyboard]
