@@ -1,34 +1,47 @@
 {
+    // 使用名为 Light 2026 的 VS Code 颜色主题
+    "workbench.colorTheme": "Light 2026",
+    // 启动 VS Code 时不打开欢迎页或空编辑器
+    "workbench.startupEditor": "none",
+    // 编辑器字体大小设置为 16px
     "editor.fontSize": 16,
-    "search.sortOrder": "modified",
-    "files.autoSave": "afterDelay",
-    "files.autoGuessEncoding": true,
-    "workbench.list.smoothScrolling": true,
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.smoothScrolling": true,
-    "editor.cursorBlinking": "smooth",
-    "editor.mouseWheelZoom": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": true,
-    "editor.formatOnSave": true,
-    "editor.wordWrap": "on",
-    "editor.guides.bracketPairs": true,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.acceptSuggestionOnEnter": "smart",
-    "editor.suggestSelection": "recentlyUsed",
-    "window.dialogStyle": "custom",
-    "debug.showBreakpointsInOverviewRuler": true,
-    "explorer.confirmDelete": false,
+    // 关闭右侧代码缩略图
     "editor.minimap.enabled": false,
-    "editor.fontFamily": "Cascadia Code, Fira Code",
-    "editor.fontLigatures": true,
+    // 开启自动换行，长代码行不会横向滚动
+    "editor.wordWrap": "on",
+    // 按文件修改时间排序搜索结果
+    "search.sortOrder": "modified",
+    // 文件修改后延迟自动保存
+    "files.autoSave": "afterDelay",
+    // 自动猜测文件编码，适合混合 UTF-8、GBK 等编码的项目
+    "files.autoGuessEncoding": true,
+    // 粘贴代码时自动格式化
+    "editor.formatOnPaste": true,
+    // 输入触发字符时自动格式化
+    "editor.formatOnType": true,
+    // 保存文件时自动格式化
+    "editor.formatOnSave": true,
+    // 显示括号对辅助线
+    "editor.guides.bracketPairs": true,
+    // 使用 VS Code 自定义样式弹窗
+    "window.dialogStyle": "custom",
+    // 在编辑器右侧概览尺中显示断点位置
+    "debug.showBreakpointsInOverviewRuler": true,
+    // 删除文件或文件夹时不弹出确认提示
+    "explorer.confirmDelete": false,
+    // 编辑器优先使用 Cascadia Code 字体，没有时使用 Fira Code
+    //"editor.fontFamily": "Cascadia Code, Fira Code",
+    // 开启字体连字，例如将 =>、=== 显示为更紧凑的符号
+    //"editor.fontLigatures": true,
+    // 忽略 VS Code 的扩展推荐
     "extensions.ignoreRecommendations": true,
+    // 在资源管理器中隐藏指定文件或目录
     "files.exclude": {
         "**/__pycache__": true,
         "**/.git": true,
         "**/.idea": true
     },
-    // 在使用搜索功能时，将这些文件夹/文件排除在外
+    // 在使用搜索功能时排除指定文件或目录
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
@@ -38,17 +51,20 @@
         "**/.git": true,
         "**/.idea": true
     },
-    "explorer.confirmPasteNative": false,
-    "explorer.confirmDragAndDrop": false,
+    // 禁用 VS Code 主程序自动更新
     "update.mode": "none",
-    "extensions.autoUpdate": "onlyEnabledExtensions",
+    // 禁用扩展自动更新
+    "extensions.autoUpdate": false,
+    // Windows 下禁用后台自动更新
     "update.enableWindowsBackgroundUpdates": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "workbench.startupEditor": "none",
+    // 不显示 VS Code 更新发布说明
+    "update.showReleaseNotes": false,
+    // 隐藏状态栏中的更新提示
+    "update.statusBar": "hidden",
+    // 打开不受信任文件时，在新窗口中打开
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    // 资源管理器中不压缩单子目录路径
     "explorer.compactFolders": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.rename.enablePreview": false
+    // 重命名符号时不显示预览，直接应用修改
+    "editor.rename.enablePreview": false,
 }
