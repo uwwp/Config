@@ -1,8 +1,0 @@
-payload:
-  - +.aistudio.google.com
-  # Notebooklm
-  - +.notebooklm.google
-  # Jetbrains AI
-  - +.jetbrains.com
-  - +.api.jetbrains.ai
-  - +.grazie.ai

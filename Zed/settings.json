@@ -1,0 +1,177 @@
+{
+    // 基础键位映射采用 VS Code 快捷键风格
+    "base_keymap": "VSCode",
+    // 界面 UI 字体大小
+    "ui_font_size": 16,
+    // 编辑器字体大小设置为 16px（对应 editor.fontSize: 16）
+    "buffer_font_size": 16.0,
+    // 颜色主题配置（浅色主题使用 Light 2026）
+    "theme": {
+        "mode": "light",
+        "light": "Catppuccin Latte - No Italics",
+        "dark": "Catppuccin Macchiato - No Italics",
+    },
+    // 图标主题
+    "icon_theme": "Catppuccin Latte",
+    // 项目面板（资源管理器，贴合 VS Code 左侧文件树习惯）
+    "project_panel": {
+        // 停靠在左侧（VS Code 经典左侧活动栏布局）
+        "dock": "left",
+        // 资源管理器中不压缩单子目录路径（对应 explorer.compactFolders: false）
+        "auto_fold_dirs": false,
+        // 在文件树中显示 Git 状态颜色
+        "git_status": true,
+        // 在文件名旁显示 Git 状态标记（如 M, U）
+        "git_status_indicator": true,
+        // 在文件名旁显示错误/警告计数气泡角标
+        "diagnostic_badges": true,
+        // 目录展开指示符使用折叠箭头与文件夹图标（与 VS Code 一致）
+        "folder_indicator": "both",
+        // 切换编辑器文件时，在文件树中自动定位展开当前文件
+        "auto_reveal_entries": true
+    },
+    // 源代码管理面板（Git 面板）停靠在左侧，符合 VS Code 侧边栏习惯
+    "git_panel": {
+        "dock": "left",
+        // 显示文件图标
+        "file_icons": true
+    },
+    // 大纲视图面板停靠在左侧（与 VS Code 资源管理器大纲一致）
+    "outline_panel": {
+        "dock": "left"
+    },
+    // 集成终端停靠在底部面板（VS Code 经典终端布局）
+    "terminal": {
+        "dock": "bottom"
+    },
+    // AI 助手面板与侧边栏配置（停靠在右侧副侧边栏）
+    "agent": {
+        "dock": "right",
+        "threads_sidebar": {
+            "position": "right"
+        },
+        "favorite_models": [],
+        "model_parameters": []
+    },
+    // 编辑器标签页（Tabs）布局习惯
+    "tabs": {
+        // 在标签页中显示文件类型图标（Zed 默认关闭，开启后与 VS Code 一致）
+        "file_icons": true,
+        // 未保存或有 Git 变动的文件在标签页中显示状态颜色
+        "git_status": true,
+        // 标签页关闭按钮位于右侧
+        "close_position": "right"
+    },
+    // 工具栏与顶部导航
+    "toolbar": {
+        // 开启顶部路径与符号面包屑导航（对应 VS Code breadcrumbs）
+        "breadcrumbs": true,
+        // 显示快速操作按钮
+        "quick_actions": true
+    },
+    // 底部状态栏配置
+    "status_bar": {
+        // 显示光标行列位置信息（如 Ln 10, Col 5）
+        "cursor_position_button": true,
+        // 显示并支持切换当前语言模式
+        "active_language_button": true,
+        // 显示换行符类型（CRLF / LF）
+        "line_endings_button": true,
+        // 常驻显示文件编码（如 UTF-8）
+        "active_encoding_button": "enabled"
+    },
+    // 光标平滑闪烁（符合 VS Code 默认视觉习惯）
+    "cursor_blink": true,
+    // 光标所在行全行高亮（包括行号区与编辑区）
+    "current_line_highlight": "all",
+    // 双击选中文本时高亮文中所有匹配的相同文本
+    "selection_highlight": true,
+    // 参数提示：在输入函数调用括号时自动弹出函数签名提示（Zed 默认关闭，开启符合 VS Code 习惯）
+    "auto_signature_help": true,
+    // 代码补全菜单中同时显示函数/属性详细文档
+    "show_completion_documentation": true,
+    // 开启彩虹括号/括号对高亮显示辅助（对应 editor.guides.bracketPairs: true）
+    "colorize_brackets": true,
+    // 缩进参考线配置
+    "indent_guides": {
+        "enabled": true,
+        // 根据当前光标所在代码块动态高亮对应缩进线（VS Code 风格）
+        "coloring": "indent_aware"
+    },
+    // 预览标签页（Preview Tabs，单击预览斜体标签，双击或编辑固定标签，与 VS Code 完全一致）
+    "preview_tabs": {
+        "enabled": true,
+        // 在项目面板中单击文件进入预览模式
+        "enable_preview_from_project_panel": true,
+        // 从快速文件搜索器（Quick Open）打开时进入预览模式
+        "enable_preview_from_file_finder": true
+    },
+    // 关闭右侧代码缩略图（对应 editor.minimap.enabled: false）
+    "minimap": {
+        "show": "never"
+    },
+    // 开启自动换行，长代码行不会横向滚动（对应 editor.wordWrap: on）
+    "soft_wrap": "editor_width",
+    // 粘贴代码时自动调整缩进（对应 editor.formatOnPaste: true）
+    "auto_indent_on_paste": true,
+    // 输入触发字符时自动格式化（对应 editor.formatOnType: true）
+    "use_on_type_format": true,
+    // 保存文件时自动格式化（对应 editor.formatOnSave: true）
+    "format_on_save": "on",
+    // 文件修改后延迟自动保存（对应 files.autoSave: afterDelay）
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 1000
+        }
+    },
+    // 启动时不打开欢迎页或恢复历史会话（对应 workbench.startupEditor: none）
+    "restore_on_startup": "none",
+    // 在资源管理器中隐藏指定文件或目录，并在扫描与搜索中跳过（对应 files.exclude）
+    "file_scan_exclusions": [
+        "**/__pycache__",
+        "**/.git",
+        "**/.idea",
+        "..."
+    ],
+    // 弹窗与更新策略
+    // 使用自定义样式弹窗，禁用系统原生确认弹窗（对应 window.dialogStyle: custom）
+    "use_system_prompts": false,
+    // 使用内置样式文件路径选择器，禁用系统原生弹窗
+    "use_system_path_prompts": false,
+    // 忽略扩展安装推荐提示（对应 extensions.ignoreRecommendations: true）
+    "suggest_extensions": false,
+    // 禁用主程序自动更新（对应 update.mode: none）
+    "auto_update": false,
+    // 关闭遥测与诊断数据发送
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
+        "anthropic_retention": false
+    },
+    // SSH 远程连接及打开的项目路径配置
+    "ssh_connections": [
+        {
+            "host": "arm",
+            "args": [],
+            "projects": [
+                {
+                    "paths": ["/root"]
+                },
+                {
+                    "paths": ["/root/work/settings"]
+                }
+            ]
+        }
+    ],
+    // 自定义 Agent 服务器配置
+    "agent_servers": {
+        "antigravity-acp": {
+            "type": "custom",
+            "command": "agy",
+            "args": ["acp", "--dangerously-skip-permissions"]
+        },
+        "codex-acp": {
+            "type": "registry"
+        }
+    }
+}
